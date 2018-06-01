@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/vendor/autoload.php';
+
+use Ofcold\Configuration\LoaderConfiguration;
+use Illuminate\Filesystem\Filesystem;
+use Illuminate\Config\Repository;
+
+$loader = new LoaderConfiguration(
+	$config = new Repository,
+	new Filesystem
+);
+
+$loader->addNamespace('test', __DIR__ . '/tests/config');
+
+print_r(json_encode($config->all()));
+print_r($config->get('test::test.foo') . "\r\n");
+
+$loader->addNamespaceOverrides('test', __DIR__ . '/tests/overrides');
+
+print_r(json_encode($config->all()));
+print_r($config->get('test::test.foo')  . "\r\n");

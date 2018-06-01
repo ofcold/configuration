@@ -1,6 +1,6 @@
 <p align="center"><img src="https://raw.githubusercontent.com/ofcold/configuration/1.0/config.svg?sanitize=true"></p>
 
-Configuration item supports laravel extension.
+Larvel组件化配置项灵活覆盖
 ------------------------
 
 <br>
@@ -10,20 +10,20 @@ Configuration item supports laravel extension.
 <br>
 
 
-## Features
- - Support component configuration, configuration files can be anywhere.
- - Overlay configuration, flexible.
+## 特色
+ - 支持组件配置，配置文件可以在任何地方。
+ - 覆盖配置，灵活。
 
-## Installing
+## 安装
 
 ```bash
     composer require ofcold/configuration
 ```
 
-## Instructions
-Enhanced laravel framework configuration items, support for rewriting.
+## 说明
+增强了laravel框架配置项目，支持覆盖。
 
-## Useing
+## 使用
 
 ```php
 
@@ -63,7 +63,6 @@ print_r(json_encode($config->all()));
 }
 ```
 
-
 Larvel
 ```php
 
@@ -82,6 +81,7 @@ class Foo
 	}
 }
 ```
+
 
 #### OR test file.
 ```bash

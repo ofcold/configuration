@@ -11,8 +11,8 @@
          syntaxCheck="false"
 >
     <testsuites>
-        <testsuite name="IdentityCard Test Suite">
-            <directory>./tests/</directory>
+        <testsuite name="Configuration Test">
+            <directory>./tests/Unit</directory>
         </testsuite>
     </testsuites>
 </phpunit>
