@@ -14,8 +14,10 @@ $loader = new LoaderConfiguration(
 
 $loader->addNamespace('test', __DIR__ . '/tests/config');
 
-print_r($config->all());
+print_r(json_encode($config->all()));
+print_r($config->get('test::test.foo') . "\r\n");
 
 $loader->addNamespaceOverrides('test', __DIR__ . '/tests/overrides');
 
-print_r($config->all());
+print_r(json_encode($config->all()));
+print_r($config->get('test::test.foo')  . "\r\n");
