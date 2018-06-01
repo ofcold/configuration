@@ -9,10 +9,12 @@ Configuration item supports laravel extension.
     </p>
 <br>
 
-
 ## Features
  - Support component configuration, configuration files can be anywhere.
  - Overlay configuration, flexible.
+
+## Environment
+php >= 7.1
 
 ## Installing
 
@@ -21,7 +23,8 @@ Configuration item supports laravel extension.
 ```
 
 ## Instructions
-Enhanced laravel framework configuration items, support for rewriting.
+We may use such a scenario, in the development of Laravel components, need some configuration, or multiple configuration items. The original Laravel may require you to merge configurations and publish to the root directory.
+As the number of components increases, so does the config file.
 
 ## Useing
 
