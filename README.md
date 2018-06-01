@@ -15,6 +15,7 @@ Configuration item supports laravel extension.
 
 ## Environment
 php >= 7.1
+Laravel >= 5.1
 
 ## Installing
 
