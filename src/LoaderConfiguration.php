@@ -3,6 +3,8 @@
 namespace Ofcold\Configuration;
 
 use SplFileInfo;
+use Illuminate\Contracts\Config\Repository;
+use Illuminate\Filesystem\Filesystem;
 
 /**
  * Class LoaderConfiguration
@@ -21,14 +23,14 @@ class LoaderConfiguration
 	/**
 	 * The configure instance.
 	 *
-	 * @var \Ofcold\Configure\Repository
+	 * @var \Illuminate\Contracts\Config\Repository
 	 */
 	protected $configure;
 
 	/**
 	 * The Filsystem instance.
 	 *
-	 * @var \Ofcold\Filesystem\Filesystem
+	 * @var \Illuminate\Filesystem\Filesystem
 	 */
 	protected $filesystem;
 
