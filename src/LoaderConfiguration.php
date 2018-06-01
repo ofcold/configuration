@@ -79,7 +79,7 @@ class LoaderConfiguration
 	 */
 	public function addNamespaceOverrides($namespace, $directory) : void
 	{
-		if (!$this->files->isDirectory($directory)) {
+		if (!$this->filesystem->isDirectory($directory)) {
 			return;
 		}
 
