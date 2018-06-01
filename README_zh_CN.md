@@ -5,7 +5,7 @@ Larvel组件化配置项灵活覆盖
 
 <br>
     <p>
-        <a href="https://github.com/ofcold/configuration/blob/1.0/README_zh_CN.md">Simplified Chinese Documentation</a>
+        <a href="https://github.com/ofcold/configuration/blob/1.0/README.md">English</a>
     </p>
 <br>
 
@@ -14,6 +14,11 @@ Larvel组件化配置项灵活覆盖
  - 支持组件配置，配置文件可以在任何地方。
  - 覆盖配置，灵活。
 
+
+## 环境
+php >= 7.1
+
+
 ## 安装
 
 ```bash
@@ -21,7 +26,8 @@ Larvel组件化配置项灵活覆盖
 ```
 
 ## 说明
-增强了laravel框架配置项目，支持覆盖。
+我们可能用这样一个场景，在开发Laravel组件时，需要一些配置，或多个配置项目。原有Laravel可能需要你去合并配置并且发布到根目录。
+随着组件的增多config文件也会随之增多。
 
 ## 使用
 
