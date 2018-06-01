@@ -31,8 +31,8 @@
     ],
     "require": {
         "php": ">=7.1",
-        "illuminate/filesystem": "~5.5",
-        "illuminate/config": "~5.5"
+        "illuminate/filesystem": "~5.1",
+        "illuminate/config": "~5.1"
     },
     "autoload": {
         "psr-4": {
